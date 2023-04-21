@@ -1,0 +1,16 @@
+{
+    "name": "com.billbobphil.billbobphil-utilities",
+    "version": "1.0.0",
+    "displayName": "Billbobphil Utilities",
+    "description": "Mashup of various utility scripts collected throughout development",
+    "unity": "2021.3",
+    "unityRelease": "2f1",
+    "documentationUrl": "https://example.com/",
+    "changelogUrl": "https://example.com/changelog.html",
+    "licensesUrl": "https://example.com/licensing.html",
+    "dependencies": {},
+    "author": {
+      "name": "billbobphil",
+      "url": "https://github.com/billbobphil"
+    }
+  }
