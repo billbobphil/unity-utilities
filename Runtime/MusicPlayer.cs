@@ -4,7 +4,7 @@ namespace Utilities
 {
     public class MusicPlayer : MonoBehaviour
     {
-        [SerializeField] private AudioSource musicAudioSource;
+        public AudioSource musicAudioSource;
 
         private void Awake()
         {
