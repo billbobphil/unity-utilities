@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.Events;
 
 namespace Utilities
 {
@@ -31,6 +32,7 @@ namespace Utilities
         public TextMeshProUGUI minutesText;
         public TextMeshProUGUI secondsText;
         public bool displayLeadingZeroes = true;
+        public static UnityAction TimerExpired;
 
         private void Start()
         {
@@ -80,6 +82,11 @@ namespace Utilities
         private void Update()
         {
             if (!_isRunning) return;
+
+            if(timerType == TimerTypes.CountDown && _time <= 0) 
+            {
+                TimerExpired?.Invoke();
+            }
             
             if (timerType == TimerTypes.CountDown && _time > 0)
             {
